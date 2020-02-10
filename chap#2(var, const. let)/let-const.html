@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Let / Const</title>
+
+
+</head>
+
+<body>
+
+<h1>Let is a block scope</h1>
+<h1>Const is also block scope and it cannot be redefined. However the data can be changed</h1>
+
+
+<script type="text/javascript">
+// Block scope 
+
+// function NA()
+// {
+
+//     var abc="My name is wasi";
+//     var val=20;                      
+//     if(val==20)                                                  
+//     {                                                  
+//         let abc="My name is saad";
+//         console.log(abc);
+//     }
+//     console.log(abc);
+//     abc="My name is mubeen";
+//     console.log(abc);
+// }
+// NA();
+
+
+// let a=10;
+// let a=20;        //Redeclaration not allowed for let
+// console.log(a);
+
+
+// let a=10;
+// a=20;            //Reassignment/ Reintialization  allowed for let
+// console.log(a);
+
+// var a=10;
+// var a=20;        //Redeclaration allowed for var
+// console.log(a);
+
+
+// var a=10;
+// let a=20;        //Redeclaration not allowed for var with let
+// console.log(a);
+
+
+
+// const carname="corolla";         //Redeclaration of const is not allowed
+// carname="mehran";            
+
+
+// const studentsNames=["wasi", "saad", "Anas"];    //Redeclaration of const is not allowed
+// studentsNames=["saad", "wasi", "Anas"];
+// console.log(studentsNames);
+
+
+// const studentsNames=["wasi", "saad", "Anas"];   //Modification of existing data structures is allowed with const.
+// studentsNames.push("hassan");
+// console.log(studentsNames);
+
+
+// const myObject= {name: "saad"};       //Redeclaration of const is not allowed
+// myObject={name: "wasi"}
+// console.log(myObject);
+
+
+// const myObject= {name: "saad"};        //Modification of existing data is allowed with const.
+// myObject.name="mubeen";
+// console.log(myObject);
+
+
+// function sleep()
+// {
+//     var a=10;
+//     const Name= "Fahad";
+//     if(a==10)
+//     {
+//         const Name="saad";               //const explained its a block scope.
+//         console.log(Name);
+//     }
+//     console.log(Name);
+
+// }
+// sleep();
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
