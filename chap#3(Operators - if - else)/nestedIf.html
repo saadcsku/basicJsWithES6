@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nested If</title>
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+
+var accountBalance=45000;
+var amounttoSpend=450;
+var tax=399;
+
+if(accountBalance>=amounttoSpend)
+{
+    console.log("Balance ok Checking tax");
+    var remainingBalance = accountBalance-amounttoSpend;
+        if(tax>=400)
+        {
+            console.log("Tax too high. Cannot make a purcahse");
+            console.log("Your balance is Rs. "+accountBalance);
+        }
+        else
+        {
+            accountBalance=remainingBalance-tax;
+            console.log("Your remaining balance is Rs. "+accountBalance);
+        }   
+
+}
+else
+{
+    console.log("Your balance is insufficient to make a purchase");
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
