@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Functions</title>
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+
+    // var a = ()=>{
+    //     console.log("Hi I am using an arrow function    ");
+    // }
+
+    // a();
+
+
+    // var sum=(a,b)=>{
+    //     return a*b
+    // }
+
+    // console.log(sum(2,3));
+
+
+    //console.log(this);  //Normal this will return Window object
+
+//     var employees=[
+//         {name: "saad", age: 32, status:true},
+//         {name: "wasi", age: 22, status:false}
+//     ]
+
+//     var employeeList=employees.map((a)=>{
+//             return "My name is "+a.name+" and my age is "+a.age+" and my status is "+a.status;
+//     })
+
+// console.log(employeeList);
+
+
+// var objectArray=[
+//     {name: "saad", age: 32, status: true},
+//     {name: "wasi", age: 22, status: true},
+//     {name: "mubeen", age: 12, status: false}
+// ]
+
+// var printArray=(array)=>
+// {
+//     var printarray=array.map((a)=>{
+
+//         return "Person name is "+a.name+" Person age is "+a.age+ " Person status is "+a.status;
+         
+//     });
+
+//     return printarray;
+
+// }
+
+// console.log(printArray(objectArray));
+
+
+
+// var multiplier= (a,b)=>a*b;          //Multiply 2 numbers
+
+// console.log (multiplier(5,10));   
+
+
+
+// var square=(num)=>num*num;           // Calculate square
+
+// console.log(square(2));
+
+
+
+// const numbers =[1,2,3,4,5,6,76,78,90];
+
+// var printNumbers=numbers.filter((a)=>{       //filter value greater then or equal to 10
+//     return a>=10;
+
+// })
+// console.log (printNumbers);
+
+
+
+// const numbers =[1,2,3,4,5,6,76,78,90];
+
+// var printNumbers=numbers.filter((a)=>{       //filter numbers that are even
+//     return a%2==0;
+
+// })
+// console.log (printNumbers);
+
+
+
+// var numberMult=(a,b)=>
+// {
+//         a=a || 10;             //  assign the value to 10 if no parameter is passed 
+//         b=b || 20;             //  assign the vlayue to 20 if no parameter is passed     
+//         return a*b
+// }
+
+// console.log(numberMult(2,3));
+// console.log(numberMult());
+
+
+
+// var numberAdder =(a=10, b=20)=>      //assign a to 10 and b to 20 if no value is assigned
+// {
+//     return a+b;
+// }
+
+// console.log(numberAdder(20,30));    
+// console.log(numberAdder());
+
+
+
+
+// var strSplitter=(str="There is no string to return")=>
+// {
+//     return str.split(" ");                   // convert an string to array
+// }
+
+// console.log(strSplitter("This is my personal information"));
+// console.log(strSplitter());
+
+
+
+
+
+// const bankAccountInfo={
+//     balance: 100,
+//     canSpendMoney: true
+// }
+
+// function Shop(val1, obj1=bankAccountInfo)
+// {
+//     if(obj1.balance>=val1)
+//     {
+//         obj1.balance=obj1.balance-val1;
+//         return true;
+//     }
+//     else
+//     {
+//         return false
+//     }
+
+// }
+// console.log(Shop(50));
+// console.log(Shop(150));
+// console.log(bankAccountInfo);
+
+
+
+// function printArg(a,b,c,d)
+// {
+//     console.log(arguments);             //print object with value 21,23,23,41
+// }
+
+// printArg(21,23,23,41);
+
+
+
+
+// function Dog(year, bread)
+// {
+//     this.age=year;
+//     this.type=bread;
+
+// }
+
+// var dog1 =new Dog(21, "Bull Dog")
+// console.log(dog1);
+
+
+
+
+
+// function Dog(year, bread)
+// {
+//     this.age=year;
+//     this.type=bread;
+//     console.log(this);
+
+// }
+
+// var dog1 =new Dog(21, "Bull Dog")
+// var dog2 =new Dog(25, "Abc Dog")
+
+
+
+
+// Constructor using setinterval to print that
+
+// function Dog(age, type)
+// {
+// const that=this;
+// that.years=age;
+// that.dogtype=type;
+// setInterval(function() {that.years=that.years+1; console.log(that)}, 1000);
+
+// }
+// const Dog1= new Dog(21, "Bull Dog");
+// const Dog2= new Dog(32, "Abc Dog");
+
+
+// var person={
+//     age: 32,
+//     fname: "wasi",
+//     lname: "Sajjad",
+//     fullname: function(){
+//                         return this.fname+" "+this.lname;
+//                         }
+// }
+
+// console.log(person.fullname())
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

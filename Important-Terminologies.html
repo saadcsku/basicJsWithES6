@@ -1,0 +1,45 @@
+
+Hoisting
+========
+
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+
+Example
+=======
+<p id="demo"></p>
+
+<script>
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;           // Display x in the element
+
+var x; // Declare x
+</script>
+
+
+
+
+
+========
+Closures
+========
+Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+
+
+Example
+=======
+
+function OuterFunction() {
+    var outerVariable = 100;
+    function InnerFunction() {
+        alert(outerVariable);
+    }
+    return InnerFunction;
+}
+
+var innerFunc = OuterFunction();
+
+
+
+
