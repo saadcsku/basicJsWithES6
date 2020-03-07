@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Load Events</title>
+<script>
+    
+// To load a function before the html is render. It wait for the DOM to render and then change the text
+document.addEventListener("DOMContentLoaded", loadheader)
+function loadheader()
+{
+    var headerId=document.getElementById("header");
+    headerId.innerText="This is the header text";
+}
+
+
+// Get image height and width
+window.addEventListener("load", getHeightandWidth)
+function getHeightandWidth()
+{
+    var im1=document.getElementById("img1")
+    console.log("height: "+im1.offsetHeight+" width: "+im1.offsetWidth);
+}
+
+
+</script>
+
+</head>
+
+<body>
+    <div id="header">
+
+    </div>
+
+    <div id="header2">
+        <img src="http://hd.wallpaperswide.com/thumbs/extra_clean_water_cs9_premium_photography-t2.jpg" id="img1">
+
+    </div>
+
+</body>
+
+</html>

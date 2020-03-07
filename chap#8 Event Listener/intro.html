@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intro to Events</title>
+<style>
+.background
+{
+    background-color: greenyellow;
+}
+.background-c
+{
+    background-color: red;
+}
+.bgGreen
+{
+    background-color: green;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="click-me">
+    Click Me
+</div> 
+
+<div id="click-me2">
+    <button>Click me</button>
+</div>
+
+<br>
+<br>
+<br>
+<div id="click-me3">
+    <button>Click me</button>
+</div>
+
+<br>
+<br>
+<br>
+<div class="background">
+ <h1>Hi I am saad</h1>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="bg1">
+    <ul>
+        <li>Banana</li>
+        <li>Strawberry</li>
+        <li>Orange</li>
+    </ul>
+
+</div>
+
+</body>
+<script>
+// An event listener on document to listen to click events.
+// document.addEventListener("click", function(){
+// alert("Welcome");
+// });
+
+
+
+
+// Click on div to trigger the event
+// var clickDiv= document.getElementById("click-me");
+// clickDiv.addEventListener("click", function(){
+// alert("Welcome");
+// })
+
+
+
+
+
+
+// Check for the event that trigger on mouse click
+// var clickDIV = document.getElementById("click-me");
+// clickDIV.addEventListener("click", function(event){
+//     console.log(event);
+//     console.log(event.type);
+    //alert(event);
+//})
+
+
+
+//click and focus in and focus out event listener
+// var secondDIV=document.getElementById("click-me2");
+// var buttonDIV= secondDIV.querySelector("button");
+
+// buttonDIV.addEventListener("click",Logevent)
+// buttonDIV.addEventListener("focusin", Logevent);
+// buttonDIV.addEventListener("focusout", Logevent);
+
+// function Logevent(event)
+// {
+// console.log(event.type);
+// }
+
+
+
+
+//event fires on first click change the text of button and remove the listner
+// var div3= document.getElementById("click-me3");
+// var button3=div3.querySelector("button");
+
+// button3.addEventListener("click", Logevent2);
+
+// function Logevent2(event)
+// {
+//     button3.innerText=event.timeStamp;
+//     button3.removeEventListener("click", Logevent2);
+// }
+
+
+// var bg1=document.querySelector(".background");
+//  bg1.addEventListener("click", Toggle);
+//  function Toggle(event)
+//  {
+//     if(event.which===1)
+//     {
+//         bg1.classList.toggle("background-c");
+//     }
+//  }
+
+
+// Toggle to change background of list 
+// var bg1Div=document.getElementById("bg1");
+// var BgUL=bg1Div.querySelector("UL");
+// var BgLi=bg1Div.querySelectorAll("LI");
+
+// BgUL.addEventListener("click", Clickfunction);
+
+// function Clickfunction(event)
+// {
+
+//     for(var prop of BgLi)
+//     {
+//         prop.classList.remove("bgGreen")
+//     }
+//     var eT=event.target;
+//     eT.classList.add("bgGreen");
+
+// }
+
+
+    
+</script>
+</html>
